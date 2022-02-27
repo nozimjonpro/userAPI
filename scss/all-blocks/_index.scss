@@ -1,0 +1,160 @@
+body{
+    background-color: #f5f5f5;
+}
+
+.index__container{
+    max-width: 1340px;
+    width: 100%;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+.users__list{
+    margin: 0 auto;
+    padding: 0;
+    list-style-type: none;
+    padding-top: 50px;
+}
+
+.user{
+    display: flex;
+    max-width: max-content;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.user__about{
+    max-width: 350px;
+    width: 100%;
+    padding: 30px;
+    background-color: #fff;
+    box-shadow: 0 0 3px 1px white;
+    text-align: center;
+    height: max-content;
+}
+
+.username{
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+.user__info{
+    max-width: 350px;
+    width: 100%;
+    height: 460px;
+    background-color: #fff;
+    padding: 40px 30px;
+    margin-left: 30px;
+}
+
+.user__habitaion{
+    max-width: 350px;
+    width: 100%;
+    height: 460px;
+    background-color: #fff;
+    padding: 33px 30px;
+    margin-left: 30px;
+}
+
+
+.user__name,
+.user__phone,
+.user__company-name,
+.user__street,
+.user__suite,
+.user__city,
+.user__zipcode,
+.user__location{
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 400;
+    
+}
+
+.user__website{
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 400;
+    display: block;
+    text-decoration: none;
+}
+
+.user__catch-phrase{
+    margin: 0;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.user__name::after,
+.user__phone::after,
+.user__website::after,
+.user__company-name::after,
+.user__street::after,
+.user__suite::after,
+.user__city::after,
+.user__zipcode::after{
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: black;
+    display: block;
+    margin-top: 20px;
+}
+
+
+.user__glocation-strong{
+    display: inline-block;
+    margin-right: 20px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.user__website-strong{
+    color: black;
+}
+
+
+.log-out{
+display: block;
+margin-left: auto;
+background-color: red;
+color: white;
+border-radius: 3px;
+}
+
+.log-out:hover{
+    opacity: 0.8;
+}
+
+.log-out:active{
+    opacity: 0.4;
+}
+
+@media only screen and(max-width: 1120px){
+    .user{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .user__habitaion{
+        margin: 0 auto;
+    }
+    .user__about{
+        margin-bottom: 30px;
+    }
+
+    .user__info{
+        margin-bottom: 30px;
+    }
+}
+
+@media only screen and(max-width: 770px){
+    .user__info{
+        margin-left: 0;
+    }
+}
+
+
+

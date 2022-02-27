@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.min.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="comments__container">
+        <div class="comments__buttons d-flex justify-content-between mt-4">
+            <button class="comments__prev-btn btn bg-info text-light" type="button">Previous page</button>
+           <button class="comments__logout-btn btn bg-danger text-light" type="submit">Log Out</button>
+        </div>
+        <ul class="comments__list"></ul>
+    </div>
+
+    <template id="comments-template">
+        <li class="comment d-flex p-4 mb-3 align-items-center">
+            <div class="comment__user text-center">
+                <img class="comment__image" src="./img/commentImg.png" width="100" height="100" alt="comments image">
+            <a class="comment__link d-block" href="#"></a>
+            </div>
+           <div class="comment__info text-center">
+            <h4 class="comment__heading"></h4>
+            <p class="comment__text"></p>
+           </div>
+        </li>
+    </template>
+
+    <script src="js/comments.js"></script>
+</body>
+</html>

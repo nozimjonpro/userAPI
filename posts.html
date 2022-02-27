@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.min.css">
+    <title>Document</title>
+</head>
+<body>
+    
+   <div class="container">
+     <div class="posts__buttons d-flex justify-content-between mt-4">
+         <button class="posts__prev-btn btn bg-info text-light" type="button">Previous page</button>
+        <button class="posts__logout-btn btn bg-danger text-light" type="submit">Log Out</button>
+     </div>
+    <ul class="posts__list"></ul>
+   </div>
+
+    <template id="posts__template">
+        <li class="post">
+            <h3 class="post__title mx-auto text-center h3"></h3>
+            <p class="post__text text-center"></p>
+            <button class="post__comments-btn d-block mx-auto btn bg-primary text-light" type="button">Post's Comments</button>
+        </li>
+    </template>
+
+    <script src="js/posts.js"></script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/main.min.css">
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="index__container">
+        <button class="log-out mt-3" type="button">Log out</button>
+        <ul class="users__list">
+       
+          </ul>
+    </div>
+
+    <template id="users-template">
+        <li class="user">
+            <div class="user__about">
+              <img
+                class="user__avatar"
+                src="./img/user.png"
+                alt="User's avatar" 
+                width="200"
+                height="200"
+              />
+    
+              <h4 class="username">Bret</h4>
+              <p class="user__bachelor-science">harness real-time e-markets</p>
+              <p class="user__address">Gwenborough, Kulas light city, Apt. 556</p>
+              <a class="user__email" href="mailto:Sincere@april.biz"
+                >Sincere@april.biz</a
+              >
+              <button class="user__post-btn d-block mt-3 mx-auto btn bg-primary text-light" type="button">User's posts</button>
+            </div>
+            <div class="user__info">
+                <h4 class="user__name"><strong class="user__name-strong">Fullname</strong>Leanne Graham</h4>
+              <p class="user__phone"><strong class="user__phone-strong">Phone</strong>1-770-736-8031 x56442</p>
+              <a class="user__website" href="mailto:hildegard.org"><strong class="user__website-strong">Email</strong>hildegard.org</a>
+              <p class="user__company-name"><strong class="user__company-name-strong">Company</strong>Romaguera-Crona</p>
+              <p class="user__catch-phrase"><strong class="user__catch-phrase-strong">Catch Phrase</strong>
+                Multi-layered client-server neural-net
+              </p>
+            </div>
+            <div class="user__habitaion">
+              <p class="user__street"><strong class="user__street-strong">Street</strong>Kulas light</p>
+              <p class="user__suite"><strong class="user__suite-strong">Suite</strong>Apt. 556</p>
+              <p class="user__city"><strong class="user__city-strong">City</strong>Gwenborough</p>
+              <p class="user__zipcode"><strong class="user__zipcode-strong">Zipcode</strong>929998-3874</p>
+              <div class="user__location"><strong class="user__glocation-strong">Geo</strong>
+                <span class="user__latitude"><i>lat:</i> -37.3159</span>,
+                <span class="user__longtitude"><i>lng:</i> 81.1496</span>
+              </div>
+            </div>
+          </li>
+    </template>
+
+    <script src="js/index.js"></script>
+  </body>
+</html>
